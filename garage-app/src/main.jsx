@@ -5,11 +5,13 @@ import App from './App.jsx'
 import ThemeProvider from './components/ThemeProvider.jsx'
 import Contact from './components/Contact.jsx'
 import Sample from './components/Sample.jsx'
+import Hooks from './components/Hooks.jsx'
 
 createRoot(document.getElementById('root')).render(
   <ThemeProvider>
     {/* <App /> */}
     {/* <Contact/> */}
-    <Sample/>
+    {/* <Sample/> */}
+    <Hooks/>
   </ThemeProvider>,
 )
