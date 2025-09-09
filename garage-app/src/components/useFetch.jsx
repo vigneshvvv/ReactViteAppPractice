@@ -3,7 +3,7 @@ import axios from "axios";
 
 function useFetch(url){
 
-    const[productsNew, setProductsNew] = useState({});
+    const[productsNew, setProductsNew] = useState([]);
     const[error,setError] = useState("");
     const[isLoading, setIsLoading] = useState(true);
 
@@ -14,7 +14,7 @@ function useFetch(url){
             let fetched = await fetch("https://dummyjson.com/products");
             //   let result = axios.get(url);
             if(fetched !== null){
-            let result =  fetched.json();
+            let result =  await fetched.json();
             console.log(result);
             setProductsNew(result.products);
             }else{
@@ -27,7 +27,8 @@ function useFetch(url){
             setIsLoading(false)
         }
 
-        }
+        };
+        response();
 
     },[])
 
