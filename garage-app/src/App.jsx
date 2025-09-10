@@ -4,6 +4,9 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import About from './components/About'
 import { ThemeContext } from './components/ThemeProvider'
+import HooksDefault from './components/HooksDefault'
+import {Provider} from 'react-redux';
+import { store } from './components/ReduxPractice/store'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,15 +14,18 @@ function App() {
 
 
   return (
-    <>  
+ 
+    <Provider store={store}>  
     <div style={{
       background: theme === "light" ? "#fff" : "#333"
     }}>
       <h1>{theme}</h1>
       <button onClick={toggleTheme}>Change Mode</button>
       <About/>
+      {/* <HooksDefault/> */}
     </div>
-    </>
+    </Provider>
+   
   )
 }
 

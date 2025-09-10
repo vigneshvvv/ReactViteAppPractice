@@ -6,12 +6,16 @@ import ThemeProvider from './components/ThemeProvider.jsx'
 import Contact from './components/Contact.jsx'
 import Sample from './components/Sample.jsx'
 import Hooks from './components/Hooks.jsx'
+import ParantComponent from './components/ParantComponent.jsx'
+import HooksClassic from './components/HooksClassic.jsx'
 
 createRoot(document.getElementById('root')).render(
   <ThemeProvider>
-    {/* <App /> */}
+    <App />
     {/* <Contact/> */}
     {/* <Sample/> */}
-    <Hooks/>
+    {/* <Hooks/> */}
+    {/* <ParantComponent/> */}
+    {/* <HooksClassic/> */}
   </ThemeProvider>,
 )
