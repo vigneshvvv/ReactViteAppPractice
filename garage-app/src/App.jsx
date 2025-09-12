@@ -7,6 +7,8 @@ import { ThemeContext } from './components/ThemeProvider'
 import HooksDefault from './components/HooksDefault'
 import {Provider} from 'react-redux';
 import { store } from './components/ReduxPractice/store'
+import StoreFetch from './StoreFetch'
+import CustomerStore from './components/ReduxPractice/ConsumerStore'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,7 +24,9 @@ function App() {
       <h1>{theme}</h1>
       <button onClick={toggleTheme}>Change Mode</button>
       <About/>
-      {/* <HooksDefault/> */}
+      <HooksDefault/>
+      <StoreFetch/>
+      <CustomerStore/>
     </div>
     </Provider>
    

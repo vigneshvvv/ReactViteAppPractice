@@ -8,14 +8,17 @@ import Sample from './components/Sample.jsx'
 import Hooks from './components/Hooks.jsx'
 import ParantComponent from './components/ParantComponent.jsx'
 import HooksClassic from './components/HooksClassic.jsx'
+import StoreFetch from './StoreFetch.jsx'
+import HooksDefault from './components/HooksDefault.jsx'
 
 createRoot(document.getElementById('root')).render(
   <ThemeProvider>
     <App />
+
     {/* <Contact/> */}
     {/* <Sample/> */}
     {/* <Hooks/> */}
     {/* <ParantComponent/> */}
-    {/* <HooksClassic/> */}
+    {/* <HooksDefault/> */}
   </ThemeProvider>,
 )
