@@ -10,11 +10,14 @@ import ParantComponent from './components/ParantComponent.jsx'
 import HooksClassic from './components/HooksClassic.jsx'
 import StoreFetch from './StoreFetch.jsx'
 import HooksDefault from './components/HooksDefault.jsx'
+import JqueryTest from './components/Jquery/JqueryTest.jsx'
+import Jquery from './components/Jquery/Jquery.jsx'
 
 createRoot(document.getElementById('root')).render(
   <ThemeProvider>
-    <App />
-
+    {/* <App /> */}
+    {/* <JqueryTest/> */}
+    <Jquery/>
     {/* <Contact/> */}
     {/* <Sample/> */}
     {/* <Hooks/> */}

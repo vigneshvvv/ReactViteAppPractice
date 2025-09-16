@@ -9,6 +9,12 @@ import {Provider} from 'react-redux';
 import { store } from './components/ReduxPractice/store'
 import StoreFetch from './StoreFetch'
 import CustomerStore from './components/ReduxPractice/ConsumerStore'
+import RefExample from './components/Hooks/RefExample'
+import UseMemo from './components/Hooks/UseMemo'
+import UseRefEx from './components/Hooks/UseRefEx'
+import UseMemoEx from './components/Hooks/UseMemoEx'
+import UseReference from './components/HooksExercise/UseReference'
+import UseMemoExcercise from './components/HooksExercise/UseMemoExcercise'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,16 +24,22 @@ function App() {
   return (
  
     <Provider store={store}>  
-    <div style={{
+    {/* <div style={{
       background: theme === "light" ? "#fff" : "#333"
-    }}>
-      <h1>{theme}</h1>
-      <button onClick={toggleTheme}>Change Mode</button>
-      <About/>
-      <HooksDefault/>
-      <StoreFetch/>
-      <CustomerStore/>
-    </div>
+    }}> */}
+      {/* <h1>{theme}</h1> */}
+      {/* <button onClick={toggleTheme}>Change Mode</button> */}
+      {/* <About/> */}
+      {/* <HooksDefault/> */}
+      {/* <StoreFetch/> */}
+      {/* <RefExample/> */}
+      {/* <UseRefEx/> */}
+      {/* <CustomerStore/> */}
+      {/* <UseMemo/> */}
+      {/* <UseMemoEx/> */}
+      <UseReference/>
+      <UseMemoExcercise/>
+    {/* </div> */}
     </Provider>
    
   )

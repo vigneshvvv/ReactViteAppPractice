@@ -6,6 +6,7 @@ import { useDispatch } from "react-redux";
 import { addCustomer } from "./ReduxPractice/customerSlice";
 import { addproduct, updateproduct } from "./ReduxPractice/productSlice";
 import { addSpare,removeSpare,updateSpare } from "./ReduxPractice/SpareSlice";
+import { addUserData, deleteUserData, updateUserData } from "./ReduxPractice/userDataSlice";
 
 function About(){
 
@@ -21,29 +22,31 @@ const despatch=  useDispatch();
         despatch(addCustomer("new value injected"));
         despatch(addproduct({name: "water", price: "30"}));
         despatch(addproduct({name: "food", price: "30"}));
-        despatch(addSpare({name: "tools", price: "100"}));
-         despatch(addSpare({name: "spare", price: "500"}));
+         despatch(addUserData({name: "vignesh", role: "SW"}));
+         despatch(addUserData({name: "Kumar", role: "SW"}));
     }
 
     function updateRedux(){
           despatch(updateproduct({name: "water", price: "40"}));
     }
+    function updateuserData(){
+        despatch(updateUserData({name: "vignesh", role: "Testing"}));
+    }
 
-    function updatestore(){
-        despatch(updateSpare({name: "tools", price: "200"}));
+    function deleteUser(){
+        despatch(deleteUserData({name: "vignesh", role: "Testing"}));
     }
-      function removeStore(){
-        despatch(removeSpare({name: "tools", price: "200"}));
-    }
+    
     const data= {name: "vignesh", role: "SW"};
+
     return(
         <>
         <h1>This is about page</h1>
         <Career data= {data} onDataSend= {handlefromChild}/>
         <button onClick={sendToRedux}>send to redux</button>
         <button onClick={updateRedux}>updateRedux</button>
-        <button onClick={updatestore}>updateStore</button>
-        <button onClick={removeStore}>removestore</button>
+        <button onClick={updateuserData} > UpdateUserData</button>
+        <button onClick={deleteUser}> deleteUser</button>
         {/* <HooksDefault/> */}
         </>
     );
