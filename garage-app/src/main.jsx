@@ -12,12 +12,16 @@ import StoreFetch from './StoreFetch.jsx'
 import HooksDefault from './components/HooksDefault.jsx'
 import JqueryTest from './components/Jquery/JqueryTest.jsx'
 import Jquery from './components/Jquery/Jquery.jsx'
+import MotionAnime from './components/animeSample/MotionAnime.jsx'
+import MotionSample from './components/animeSample/MotionSample.jsx'
 
 createRoot(document.getElementById('root')).render(
   <ThemeProvider>
     {/* <App /> */}
     {/* <JqueryTest/> */}
-    <Jquery/>
+    {/* <Jquery/> */}
+    {/* <MotionAnime/> */}
+    <MotionSample/>
     {/* <Contact/> */}
     {/* <Sample/> */}
     {/* <Hooks/> */}
