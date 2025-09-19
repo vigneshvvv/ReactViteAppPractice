@@ -20,8 +20,8 @@ createRoot(document.getElementById('root')).render(
     {/* <App /> */}
     {/* <JqueryTest/> */}
     {/* <Jquery/> */}
-    {/* <MotionAnime/> */}
-    <MotionSample/>
+    <MotionAnime/>
+    {/* <MotionSample/> */}
     {/* <Contact/> */}
     {/* <Sample/> */}
     {/* <Hooks/> */}

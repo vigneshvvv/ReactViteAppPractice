@@ -1,7 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #ff7eb3, #ff758c, #ffa74d);
+  /* background: linear-gradient(135deg, #ff7eb3, #ff758c, #ffa74d); */
+   background: black;
+  
 }
 
 
@@ -18,4 +20,61 @@ body {
   height: 150px;
   background: white;
   border-radius: 12px;
+  object-fit: contain;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
 } 
+
+.motion-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* .h1motion{
+  color: white;
+  text-align: center;
+} */
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* space between items */
+}
+
+.h1motion {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.h2motion{
+  font-size: 2rem;
+  font-weight: bold;
+  color: grey;
+}
+
+.image-container {
+  width: 200px;   /* fix container size */
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* prevents image from leaking out */
+  border-radius: 12px;
+  background: black; /* optional background for contrast */
+}
+
+.warrior-img {
+ width: 100%;
+  height: 100%;
+  object-fit: contain; 
+}
+
+.h1sample{
+  color: white;
+  text-align: center;
+}
